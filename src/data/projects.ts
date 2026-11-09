@@ -27,10 +27,12 @@ export const projects: Project[] = [
   },
   {
     id: "thesis",
-    title: "Oil Palm Yield Prediction (Final Year Project)",
+    title: "Oil Palm Yield Predictor",
     description:
-      "A machine learning system using Support Vector Machines to predict oil palm plantation yield from ten agronomic and environmental inputs.",
-    stack: ["Python", "Scikit-learn", "SVM"],
-    status: "in-progress",
+      "Final-year thesis project, extended: improved the SVR baseline (R² 0.14) to a Random Forest (R² 0.71), running live in the browser.",
+    stack: ["Python", "scikit-learn", "Random Forest", "React", "TypeScript"],
+    status: "live",
+    link: "https://palm-yield-predictor.vercel.app",
+    repo: "https://github.com/unfazedplus/palm-yield-predictor",
   },
 ];

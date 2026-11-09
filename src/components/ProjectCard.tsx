@@ -27,9 +27,16 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           {project.stack.map((technology) => <span key={technology}>{technology}</span>)}
         </div>
         {destination ? (
-          <a href={destination} target="_blank" rel="noreferrer" className="project-link">
-            View project <span aria-hidden="true">↗</span>
-          </a>
+          <div className="project-links">
+            <a href={destination} target="_blank" rel="noreferrer" className="project-link">
+              {project.link && project.repo ? "View live demo" : "View project"} <span aria-hidden="true">↗</span>
+            </a>
+            {project.link && project.repo && (
+              <a href={project.repo} target="_blank" rel="noreferrer" className="project-link">
+                View code <span aria-hidden="true">↗</span>
+              </a>
+            )}
+          </div>
         ) : (
           <span className="project-link project-link-muted">Case study soon</span>
         )}

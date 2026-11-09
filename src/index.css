@@ -897,6 +897,13 @@ button {
   content: "·";
 }
 
+.project-links {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+}
+
 .project-link {
   flex: 0 0 auto;
   font-size: 0.7rem;
